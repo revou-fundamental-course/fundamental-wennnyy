@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Wenny</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="nav-container">
+        <div class="logo-icon"></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#our-portfolio">Our Portfolio</a>
+            <a href="#message-us">Message Us</a>
+        </nav>
+    </header>
+    <hr />
+
+    <main>
+        <!-- ini adalah home container -->
+        <section id="home">
+            <div class="banner-container">
+                <div class="banner-text">
+                    <h1>WELCOME TO WENNY ARSITEKTUR</h1>
+                    <p>"Transforming Spaces, Inspiring Lives: Discover Innovative Architecture with Us"</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr />
+
+        <!-- ini adalah our profile -->
+        <section id="our-portfolio">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
     
+            <article class="profile-content">
+                <div class="profile-item">
+                    <div class="profile-icon profile-1"></div>
+                    <p><strong>Desain Berbasis Inovasi:</strong></p>
+                    <p>solusi desain yang kreatif dan inovatif untuk setiap proyek.</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-2"></div>
+                    <p><strong>Kolaborasi Intensif:</strong></p>
+                    <p>Pendekatan kolaboratif yang kuat.</p>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-icon profile-3"></div>
+                    <p><strong>Pengalaman dan Keahlian:</strong></p>
+                    <p>Tim profesional yang berpengalaman dalam berbagai jenis proyek arsitektur.</p>
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- ini adalah message us -->
+        <section id="message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <article class="message-container">
+                <form class="message-form" id="messageForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="dob">Tanggal Lahir:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Jenis Kelamin:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Pilih...</option>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+
+                <div class="message-result">
+                    <h2>Thank you for the message</h2>
+                    <p><strong>Name:</strong> <span id="result-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="result-dob"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="result-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="result-message"></span></p>
+                </div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- ini adalah footer -->
+        <footer class="footer-container">
+            <p>&copy; 2024 Arsitektur Wenny. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#our-portfolio">Our Portfolio</a>
+                <a href="#message-us">Message Us</a>
+            </nav>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

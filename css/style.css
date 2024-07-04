@@ -1,1 +1,230 @@
-/* ini css */
+body {
+    background-color: #f0f0f0; /* Warna abu-abu untuk latar belakang */
+    color: #333; /* Warna teks umum */
+}
+
+/* Posisi dan gaya untuk judul "Our Profile" dan "Message Us" */
+header h1,
+.message-container header h1 {
+    text-align: center; 
+    font-size: 2.5rem;
+    margin-bottom: 30px; 
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Posisi dan gaya untuk konten di navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/logo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav > a {
+    display: inline-block; 
+    padding: 15px 32px;
+    text-align: center;
+    border: 1px solid ;
+    margin-bottom: 10px; 
+    text-decoration: none;
+    background-color: #615b5b; 
+    color: #f3ebeb; 
+}
+
+/* Posisi dan gaya untuk konten di home container */
+.banner-container {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+}
+
+/* Posisi dan gaya untuk konten di Our Profile */
+.profile-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: wrap; 
+}
+
+.profile-item {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: 100px; 
+    margin-right: 100px; 
+    width: 200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-icon {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.profile-1 {
+    background-image: url(../assets/profile2.jpg);
+}
+
+.profile-2 {
+    background-image: url(../assets/profile1.jpg);
+}
+
+.profile-3 {
+    background-image: url(../assets/profile3.jpg);
+}
+
+/* Posisi dan gaya untuk konten di "Message Us" */
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: auto;
+    padding: 20px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.message-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+
+.message-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.message-form input,
+.message-form select,
+.message-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.message-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.message-form button:hover {
+    background-color: #45a049;
+}
+
+.message-result {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+/* Posisi dan gaya untuk konten di footer */
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    color: #333; 
+    border-top: 1px solid;
+    
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: #615b5b; 
+    color: #f3ebeb; 
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Posisi dan gaya untuk konten responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-icon {
+        margin-bottom: 20px; 
+    }
+
+    nav > a {
+        margin-bottom: 10px;
+        padding: 10px 20px; 
+    }
+
+    .banner-text {
+        width: 80%; 
+    }
+
+    .profile-item {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 150px; 
+    }
+
+    .message-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .message-result {
+        margin-left: 0; 
+    }
+}
+
